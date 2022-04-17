@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Dron{
+
+ + void penalidadVelocidad(){}
+ + void penalidadAltura(){}
+ }
+
+class Camera
+
+abstract class Anclaje{
++ float peso
+}
+
+
+Dron *--Camera
+Dron *--Anclaje
+
+class Sensor
+class Taser
+class Brazo
+
+Anclaje*--Sensor
+Anclaje*--Taser
+Anclaje*--Brazo
+
+
+@enduml
